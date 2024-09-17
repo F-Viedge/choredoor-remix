@@ -1,3 +1,7 @@
+Hi Meta you and I built this cool game together I'm about to commit it to GITHUB and I'd like you to contribute to the README to describe what the code in script.js does and how we got there together.
+
+Thanks again for your collaboration...
+
 const startButton = document.getElementById('start');
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
@@ -140,3 +144,30 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("Document loaded, starting round");
   startRound();
 });
+
+Game Description
+This is a simple door-opening game where the player must avoid opening the door with the "bot" behind it. The game features three doors, one of which is randomly assigned the "bot" door.
+How to Play
+Click the "Start" button to begin a new round.
+Click on one of the three doors to open it.
+If the door has the "bot" behind it, the game ends and the player loses.
+If all doors are opened without finding the "bot," the player wins.
+Script.js Explanation
+The script.js file contains the game logic, which is divided into several functions:
+Game Initialization
+startRound(): Resets the game state, closes all doors, and generates a new random "bot" door.
+Door Interaction
+isClicked(door): Checks if a door has already been clicked.
+isBot(door): Checks if a door has the "bot" behind it.
+playDoor(door): Handles door opening logic, checking for the "bot" and updating game state.
+Game Over
+gameOver(status): Ends the game, updates the start button text, and displays an alert if the player loses.
+Event Listeners
+Door clicks: Open the corresponding door and play the door logic.
+Start button clicks: Restart the game if it's not currently playing.
+Custom Alert
+customAlert(): Displays a custom alert box when the player loses.
+DOM Content Loaded
+Initializes the game by calling startRound().
+Collaboration
+This game was developed in collaboration with Frederick Viedge and Meta AI.

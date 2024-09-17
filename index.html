@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chore Door!</title>
+    <title>Chore Door - Remix Seleca!</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
+  
       <div class="header"> 
-      <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg">
+      <img src="images/choredoor-logo.gif">
       </div>
       <div class="title-row"> 
-          <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+          <img src="images/monkey-lhs.svg">
           <p class="instructions-title">Instructions</p>
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+                    <img src="images/monkey-rhs.svg">
       </div>
       <table class="instructions-row"> 
           <tr> 
           <td class="instructions-number">1</td>
-            <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+            <td class="instructions-text">Hiding behind one of these doors is Sir Montgomery the monkey on our backs!</td>
           </tr> 
           <tr> 
            <td class="instructions-number">2</td>
-            <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+            <td class="instructions-text">Can you open all of the doors without running into him?</td>
           </tr> 
           <tr>
            <td class="instructions-number">3</td>
-            <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+            <td class="instructions-text">Open the door on Monty&apos;s realm and we&apos;ll force you to  buy <strong>The Couch Ninjas</strong> song about vice! A fate worse than death mwa hahaha! </td>
           </tr> 
           <tr> 
            <td class="instructions-number">4</td>
-            <td class="instructions-text">See if you can score a winning streak!</td>
+            <td class="instructions-text">Let&apos;s see how long your calculated choices keep you in the game.</td>
           </tr> 
       </table>
 <div class="door-row">
-        <img id="door1" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"> 
-    <img id="door2" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"> 
-  <img id="door3" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"> 
+        <img id="door1" class="door-frame" src="images/closed_door.svg"> 
+    <img id="door2" class="door-frame" src="images/closed_door.svg"> 
+  <img id="door3" class="door-frame" src="images/closed_door.svg"> 
 
 </div>
       <div id="start" class="start-row">Good luck!</div>
+      
+      <div id="custom-alert" style="display: none;">
+          <div class="alert-container">
+          <h2 id="alert-title">IT'S ALL OVER!</h2>
+          <p id="alert-message"><img src="images/monty-game.gif" alt="Welcome to my realm, Now you have two options, Buy The Track, OR, Find out why you must, Buy it, Or Both, You were warned, And honestly the track, Is pretty good, Not worse than death, Or you could just, Refresh the browser, 🙄"></p>
+          <p><a href="https://thecouchninjas.bandcamp.com/" target="_blank"><button id="alert-ok" class="button1">buy the track</button></p>
+            <p><a href="https://www.youtube.com/watch?v=HlRe0ZD6KYM&t=182s" target="_blank"><button id="alert-ok" class="button2">find out why you must buy it</button></p>
+        </div>
+      </div>
 
     <script type="text/javascript" src="script.js"></script>
   </body>

@@ -1,64 +1,112 @@
 body {
-  background-color: #663366;
-  margin: 0px;
-}
+    background-color: #ffffff;
+    margin: 0px;
+  }
+  
+  .header{
+      background-color: #ffffff;
+      text-align: center;
+  }
+  
+  .title-row{
+  margin-top: 42px;
+  margin-bottom: 21px;
+  text-align: center;
+  }
+  
+  .instructions-title{
+      display: inline;
+      font-size: 18px;
+      color: #303a3a;
+      font-family: "Nosifer", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      
+  }
+  
+  .instructions-row{
+      margin: 0 auto;
+      width: 400px;
+  }
+  
+  .instructions-number{
+      padding-right: 5px;
+      font-family: "Nosifer", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      color: #303a3a;
+  }
+  
+  .instructions-text{
+      padding: 10px;
+      font-family: 'Work Sans';
+      font-size: 14px;
+      color: #000000;
+  }
+  
+  .door-row{
+      text-align: center;
+  }
+  
+  .door-frame{
+      cursor: pointer;
+      padding: 10px;
+  }
+  
+  .start-row{
+      margin: auto;
+      width: 220px;
+      height: 43px;
+      font-family:"Nosifer", system-ui;
+      background-color: #000000;
+      border-radius: 3em;
+      padding-top: 18px;
+      font-size: 12px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 21px;
+      cursor: pointer;
+  }
 
-.header{
-    background-color: #cc99cc;
+  #custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .alert-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    border-radius: 1em;
+  }
+
+  .alert-container h2 {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
-}
+  }
 
-.title-row{
-margin-top: 42px;
-margin-bottom: 21px;
-text-align: center;
-}
+  .alert-container p {
+    text-align: center;
+  }
 
-.instructions-title{
-    display: inline;
-       font-size: 18px;
-    color: #00ffff;
-    Font-family: 'work-sans';
-}
-
-.instructions-row{
-    margin: 0 auto;
-    width: 400px;
-}
-
-.instructions-number{
-    padding-right: 25px;
-    font-family: 'work-sans';
-    font-size: 36px;
-    color: #00ffff;
-}
-
-.instructions-text{
-    padding: 10px;
-    font-family: 'Work Sans';
-    font-size: 14px;
+  .alert-container .button1 {
+    background-color: blue;
+    font-family:"Nosifer", system-ui;
     color: #ffffff;
-}
+    border-radius: 1em;
+    margin-left: 1em;
+  }
 
-.door-row{
-    text-align: center;
-}
-
-.door-frame{
-    cursor: pointer;
-    padding: 10px;
-}
-
-.start-row{
-    margin: auto;
-    width: 120px;
-    height: 43px;
-    font-family: 'Work Sans';
-    background-color: #cc99cc;
-    padding-top: 18px;
-    font-size: 18px;
-    text-align: center;
-    color: #010165;
-    margin-bottom: 21px;
-    cursor: pointer;
-}
+  .alert-container .button2 {
+    background-color: red;
+    font-family:"Nosifer", system-ui;
+    color: #ffffff;
+    border-radius: 1em;
+    margin-left: 1em;
+  }
